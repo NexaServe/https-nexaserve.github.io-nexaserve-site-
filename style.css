@@ -1,0 +1,276 @@
+/* General Reset & Base */
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  color: #222;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+/* Container */
+.container {
+  width: 92%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* Header / Navigation */
+.header {
+  background: rgba(8,9,12,0.96);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(10,11,12,0.12);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+.logo {
+  color: #fff;
+  font-weight: 800;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+.nav-links a {
+  color: #e6eef8;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav-links a:hover {
+  color: #bfe6ff;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(120deg, #0f6fb1 0%, #00a7f7 50%, #00b4ff 100%);
+  color: #fff;
+  text-align: center;
+  padding: 80px 0 64px;
+}
+.hero h2 {
+  font-size: 2.25rem;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+.hero p {
+  font-size: 1.07rem;
+  margin-bottom: 20px;
+}
+.btn-primary {
+  background: #fff;
+  color: #0078d4;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.btn-primary:hover {
+  background: #e6e6e6;
+}
+
+/* Section */
+.section {
+  padding: 56px 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 28px;
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0c2540;
+}
+
+/* Why Choose Us */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+.why-card {
+  background: #fff;
+  border: 1px solid #eef6fb;
+  padding: 20px;
+  border-radius: 10px;
+}
+.why-card h3 {
+  margin-bottom: 8px;
+  color: #07314a;
+}
+.why-card p {
+  margin: 0;
+}
+
+/* Services */
+.service-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.service-card {
+  background: #fff;
+  border: 1px solid #eef4f9;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(8,27,44,0.06);
+}
+
+/* Industries */
+.industries-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+.industry-card {
+  background: #f8fbff;
+  border: 1px solid #eaf5ff;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Pricing */
+.pricing-grid {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pricing-card {
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e9f3fb;
+  padding: 22px;
+  text-align: center;
+}
+.price {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #046aa8;
+}
+
+/* About */
+.about-section p {
+  max-width: 880px;
+  margin: 0 auto;
+  text-align: center;
+  color: #274055;
+  font-size: 1rem;
+}
+
+/* Mission & Vision */
+.mv-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.mv-card {
+  background: #ffffff;
+  border: 1px solid #e6f0f8;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+}
+.mv-card h3 {
+  margin: 0 0 8px;
+  color: #083048;
+  font-weight: 700;
+}
+.mv-card p {
+  margin: 0;
+  color: #2b4758;
+  font-size: 0.97rem;
+}
+
+/* Values & Principles */
+.values-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.value-card {
+  background: #f9fcff;
+  border: 1px solid #e1eff9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+}
+.value-card h3 {
+  margin: 0 0 6px;
+  color: #083048;
+  font-weight: 700;
+}
+.value-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #2b4758;
+}
+
+/* Commitment */
+.commitment-section p {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #2b4758;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background: linear-gradient(90deg,#082e4a 0%, #0b6ea8 100%);
+  color: #fff;
+  text-align: center;
+  padding: 36px 16px;
+}
+.cta-banner h2 {
+  margin-bottom: 12px;
+}
+.cta-banner .btn-primary {
+  background: #fff;
+  color: #0078d4;
+}
+
+/* Contact */
+.contact-section a {
+  color: #0078d4;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  background: #06121b;
+  color: #cfeeff;
+  text-align: center;
+  padding: 18px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}
