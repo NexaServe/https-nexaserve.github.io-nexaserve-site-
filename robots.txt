@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://yourdomain-or-github-url/sitemap.xml
+Sitemap:    https://nexaserve.github.io/https-nexaserve.github.io-nexaserve-site-//sitemap.xml
