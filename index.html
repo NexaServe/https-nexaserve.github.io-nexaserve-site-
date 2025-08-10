@@ -9,87 +9,209 @@
     <meta name="description" content="NexaServe provides professional customer service and admin support for small businesses — 7 days/week, 4 focused hours/day with guaranteed 12–24h responses. Email: nexaserve.help@gmail.com" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph -->
+    <!-- Open Graph (Social Sharing) -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="NexaServe – Reliable Customer Service & Admin Support" />
     <meta property="og:description" content="We handle customer emails, invoicing and admin so you can focus on growth. Monthly & annual packages." />
     <meta property="og:url" content="https://nexaserve.github.io/nexaserve-site/" />
     <meta property="og:image" content="https://nexaserve.github.io/nexaserve-site/og-image.png" />
 
-    <!-- Structured data -->
+    <!-- Structured Data for SEO -->
     <script type="application/ld+json">
     {
-      "@context":"https://schema.org",
-      "@type":"ProfessionalService",
-      "name":"NexaServe",
-      "url":"https://nexaserve.github.io/nexaserve-site/",
-      "telephone":"+27815986751",
-      "email":"nexaserve.help@gmail.com",
-      "address": {"@type":"PostalAddress", "addressCountry":"ZA"}
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "NexaServe",
+      "url": "https://nexaserve.github.io/nexaserve-site/",
+      "telephone": "+27815986751",
+      "email": "nexaserve.help@gmail.com",
+      "address": { "@type": "PostalAddress", "addressCountry": "ZA" }
     }
     </script>
 
+    <!-- Styles & Fonts -->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <h1>NexaServe</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#values">Values</a>
-            <a href="#contact">Contact</a>
-        </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <h1 class="logo">NexaServe</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#why">Why Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section id="hero">
-        <h2>Your Trusted Customer Service & Admin Partner</h2>
-        <p>Providing reliable support to help your business grow — 4 hours/day of focused work, 7 days/week, with guaranteed 12–24h response times.</p>
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Reliable Support, Powered by NexaServe</h2>
+            <p>Professional customer service and admin solutions so you can focus on growing your business.</p>
+            <a href="#contact" class="btn-primary">Get Started</a>
+        </div>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At NexaServe, we specialize in providing exceptional customer service and admin support for small businesses in South Africa. We operate with efficiency and focus — dedicating just 4 hours a day to your needs, ensuring productivity and timely delivery without unnecessary costs.</p>
+    <!-- Why Choose Us -->
+    <section id="why" class="section">
+        <div class="container">
+            <h2 class="section-title">Why Choose NexaServe?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Focused 4-Hour Daily Operations</h3>
+                    <p>We operate just 4 hours a day — but in that time, we work with precision and focus to ensure every task is completed efficiently and to the highest standard. No wasted hours, just results.</p>
+                </div>
+                <div class="why-card">
+                    <h3>7-Day Availability</h3>
+                    <p>We work every day of the week with guaranteed 12–24h response times.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Professional & Brand-Aligned</h3>
+                    <p>We match your brand tone to provide seamless customer experiences.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Scalable Support</h3>
+                    <p>Our services grow with your business — from small startups to expanding teams.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- SERVICES -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Customer email management and responses</li>
-            <li>Invoicing and payment tracking</li>
-            <li>Data entry and record keeping</li>
-            <li>Scheduling and calendar management</li>
-            <li>General administrative support</li>
-        </ul>
+    <!-- Services -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Customer Email Management</h3>
+                    <p>Up to 30 emails/day, handled with speed, accuracy, and your brand's tone.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Admin Support</h3>
+                    <p>From invoicing to follow-ups, we handle the details so you can focus on growth.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Weekly Reports</h3>
+                    <p>Clear, concise updates so you always know your customer service performance.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- VALUES -->
-    <section id="values">
-        <h2>Our Values & Principles</h2>
-        <ul>
-            <li><strong>Reliability:</strong> We keep our promises and meet deadlines.</li>
-            <li><strong>Efficiency:</strong> Focused work hours mean no wasted time.</li>
-            <li><strong>Quality:</strong> Attention to detail in every task we handle.</li>
-            <li><strong>Integrity:</strong> Transparent, honest, and ethical business practices.</li>
-        </ul>
+    <!-- Industries -->
+    <section id="industries" class="section industries-section">
+        <div class="container">
+            <h2 class="section-title">Industries We Serve</h2>
+            <div class="industries-grid">
+                <div class="industry-card">E-commerce</div>
+                <div class="industry-card">Freelancers</div>
+                <div class="industry-card">Small Agencies</div>
+                <div class="industry-card">Startups</div>
+                <div class="industry-card">Local Businesses</div>
+                <div class="industry-card">NGOs</div>
+            </div>
+        </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:nexaserve.help@gmail.com">nexaserve.help@gmail.com</a></p>
-        <p>Phone: <a href="tel:+27815986751">+27 81 598 6751</a></p>
+    <!-- Pricing -->
+    <section id="pricing" class="section pricing-section">
+        <div class="container">
+            <h2 class="section-title">Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Month-to-Month</h3>
+                    <p class="price">R6,500 / month</p>
+                    <p>Pay monthly, cancel anytime with 7 days' notice.</p>
+                </div>
+                <div class="pricing-card">
+                    <h3>Annual</h3>
+                    <p class="price">R70,200 / year</p>
+                    <p>Pay yearly in advance and save 10%.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- About -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About NexaServe</h2>
+            <p>
+                NexaServe is a trusted South African-based customer service and administrative support provider. We help businesses focus on growth while we manage their customer communication and admin tasks. Our unique model allows us to operate just 4 focused hours a day, 7 days a week — ensuring you get all the work done without paying for unnecessary idle time. With guaranteed 12–24h response times, we integrate seamlessly into your operations as a reliable, brand-aligned partner.
+            </p>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section id="mission" class="section mission-section">
+        <div class="container">
+            <h2 class="section-title">Our Mission & Vision</h2>
+            <div class="mv-grid">
+                <div class="mv-card">
+                    <h3>Mission</h3>
+                    <p>To empower businesses by delivering consistent, professional, and efficient customer support, enabling them to focus on their core growth strategies.</p>
+                </div>
+                <div class="mv-card">
+                    <h3>Vision</h3>
+                    <p>To become the most trusted outsourced customer service partner in Africa, known for reliability, innovation, and genuine care for our clients’ success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values & Principles -->
+    <section id="values" class="section values-section">
+        <div class="container">
+            <h2 class="section-title">Our Values & Principles</h2>
+            <div class="values-grid">
+                <div class="value-card"><h3>Integrity</h3><p>We maintain honesty and transparency in all our communications and operations.</p></div>
+                <div class="value-card"><h3>Reliability</h3><p>Our clients trust us to deliver on time, every time, without compromising quality.</p></div>
+                <div class="value-card"><h3>Excellence</h3><p>We hold ourselves to the highest standards in service delivery and client satisfaction.</p></div>
+                <div class="value-card"><h3>Client Focus</h3><p>Every decision we make is guided by our commitment to our clients' goals and needs.</p></div>
+                <div class="value-card"><h3>Confidentiality</h3><p>We protect our clients’ data and respect their privacy at all times.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commitment -->
+    <section id="commitment" class="section commitment-section">
+        <div class="container">
+            <h2 class="section-title">Our Commitment to Clients</h2>
+            <p>At NexaServe, we treat our clients’ businesses as our own. We commit to upholding professionalism, respecting deadlines, and delivering measurable value in every interaction. Our team operates with the belief that our clients’ success is our success.</p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+        <h2>Ready to streamline your customer support?</h2>
+        <a href="#contact" class="btn-primary">Contact Us Today</a>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p>Email: <a href="mailto:nexaserve.help@gmail.com">nexaserve.help@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/27815986751" target="_blank">+27 81 598 6751</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 NexaServe. All rights reserved.</p>
+        <p>© 2025 NexaServe. All Rights Reserved.</p>
     </footer>
+
 </body>
 </html>
+
