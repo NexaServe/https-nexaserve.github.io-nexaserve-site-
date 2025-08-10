@@ -30,7 +30,7 @@
     }
     </script>
 
-    <!-- Styles & Fonts -->
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -38,169 +38,154 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="container nav-container">
-            <h1 class="logo">NexaServe</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#why">Why Us</a></li>
-                    <li><a href="#trial">Free Trial</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<!-- HEADER -->
+<header class="header">
+    <div class="container nav-container">
+        <h1 class="logo">NexaServe</h1>
+        <nav>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#why">Why Us</a></li>
+                <li><a href="#trial">Free Trial</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </nav>
+    </div>
+</header>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Reliable Support, Powered by NexaServe</h2>
-            <p>Professional customer service and admin solutions so you can focus on growing your business.</p>
-            <a href="#contact" class="btn-primary">Get Started</a>
-        </div>
-    </section>
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2>Reliable Support, Powered by NexaServe</h2>
+        <p>Professional customer service and admin solutions so you can focus on growing your business.</p>
+        <a href="#contact" class="btn-primary">Get Started</a>
+    </div>
+</section>
 
-    <!-- Why Choose Us -->
-    <section id="why" class="section">
-        <div class="container">
-            <h2 class="section-title">Why Choose NexaServe?</h2>
-            <div class="why-grid">
-                <div class="why-card">
-                    <h3>Focused 4-Hour Daily Operations</h3>
-                    <p>We operate just 4 hours a day — but in that time, we work with precision and focus to ensure every task is completed efficiently and to the highest standard. No wasted hours, just results.</p>
-                </div>
-                <div class="why-card">
-                    <h3>7-Day Availability</h3>
-                    <p>We work every day of the week with guaranteed 12–24h response times.</p>
-                </div>
-                <div class="why-card">
-                    <h3>Professional & Brand-Aligned</h3>
-                    <p>We match your brand tone to provide seamless customer experiences.</p>
-                </div>
-                <div class="why-card">
-                    <h3>Scalable Support</h3>
-                    <p>Our services grow with your business — from small startups to expanding teams.</p>
-                </div>
+<!-- WHY CHOOSE US -->
+<section id="why" class="section">
+    <div class="container">
+        <h2 class="section-title">Why Choose NexaServe?</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <h3>Focused 4-Hour Daily Operations</h3>
+                <p>We operate just 4 hours a day — but in that time, we work with precision and focus to ensure every task is completed efficiently and to the highest standard.</p>
+            </div>
+            <div class="why-card">
+                <h3>7-Day Availability</h3>
+                <p>We work every day of the week with guaranteed 12–24h response times.</p>
+            </div>
+            <div class="why-card">
+                <h3>Professional & Brand-Aligned</h3>
+                <p>We match your brand tone to provide seamless customer experiences.</p>
+            </div>
+            <div class="why-card">
+                <h3>Scalable Support</h3>
+                <p>Our services grow with your business — from small startups to expanding teams.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Free Trial -->
-    <section id="trial" class="section trial-section">
-        <div class="container">
-            <h2 class="section-title">Free 7-Day Trial</h2>
-            <p>If you’re not sure yet, come try NexaServe for a full week — completely free. No risk, just results.</p>
-            <form class="trial-form" action="https://formspree.io/f/xnnzlgww" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="business" placeholder="Business Name" required>
-                <button type="submit" class="btn-primary">Start My Free Trial</button>
-            </form>
-        </div>
-    </section>
+<!-- FREE TRIAL -->
+<section id="trial" class="section trial-section">
+    <div class="container">
+        <h2 class="section-title">Try Us for 7 Days — Free</h2>
+        <p>If you’re not sure yet, try our services for 7 days completely free. Experience our professional, reliable service before committing.</p>
+        <form class="trial-form" action="https://formspree.io/f/xnnzlgww" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Tell us about your business" required></textarea>
+            <button type="submit" class="btn-primary">Start My Free Trial</button>
+        </form>
+    </div>
+</section>
 
-    <!-- Services -->
-    <section id="services" class="section">
-        <div class="container">
-            <h2 class="section-title">Our Services</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <h3>Customer Email Management</h3>
-                    <p>Up to 30 emails/day, handled with speed, accuracy, and your brand's tone.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Admin Support</h3>
-                    <p>From invoicing to follow-ups, we handle the details so you can focus on growth.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Weekly Reports</h3>
-                    <p>Clear, concise updates so you always know your customer service performance.</p>
-                </div>
+<!-- SERVICES -->
+<section id="services" class="section">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Customer Email Management</h3>
+                <p>Up to 30 emails/day, handled with speed, accuracy, and your brand's tone.</p>
+            </div>
+            <div class="service-card">
+                <h3>Admin Support</h3>
+                <p>From invoicing to follow-ups, we handle the details so you can focus on growth.</p>
+            </div>
+            <div class="service-card">
+                <h3>Weekly Reports</h3>
+                <p>Clear, concise updates so you always know your customer service performance.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Industries -->
-    <section id="industries" class="section industries-section">
-        <div class="container">
-            <h2 class="section-title">Industries We Serve</h2>
-            <div class="industries-grid">
-                <div class="industry-card">E-commerce</div>
-                <div class="industry-card">Freelancers</div>
-                <div class="industry-card">Small Agencies</div>
-                <div class="industry-card">Startups</div>
-                <div class="industry-card">Local Businesses</div>
-                <div class="industry-card">NGOs</div>
+<!-- PRICING -->
+<section id="pricing" class="section pricing-section">
+    <div class="container">
+        <h2 class="section-title">Pricing</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Month-to-Month</h3>
+                <p class="price">R9,500 / month</p>
+                <p>Pay monthly, cancel anytime with 7 days' notice.</p>
+            </div>
+            <div class="pricing-card">
+                <h3>Annual</h3>
+                <p class="price">R102,600 / year</p>
+                <p>Pay yearly in advance and save 10%.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Pricing -->
-    <section id="pricing" class="section pricing-section">
-        <div class="container">
-            <h2 class="section-title">Pricing</h2>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Month-to-Month</h3>
-                    <p class="price">R9,500 / month</p>
-                    <p>Pay monthly, cancel anytime with 7 days' notice.</p>
-                </div>
-                <div class="pricing-card">
-                    <h3>Annual</h3>
-                    <p class="price">R102,600 / year</p>
-                    <p>Pay yearly in advance and save 10%.</p>
-                </div>
+<!-- ABOUT -->
+<section id="about" class="section about-section">
+    <div class="container">
+        <h2 class="section-title">About NexaServe</h2>
+        <p>NexaServe is a trusted South African-based customer service and administrative support provider. We help businesses focus on growth while we manage their customer communication and admin tasks. Our unique model allows us to operate just 4 focused hours a day, 7 days a week — ensuring you get all the work done without paying for unnecessary idle time.</p>
+    </div>
+</section>
+
+<!-- MISSION & VALUES -->
+<section id="mission" class="section mission-section">
+    <div class="container">
+        <h2 class="section-title">Our Mission & Vision</h2>
+        <div class="mv-grid">
+            <div class="mv-card">
+                <h3>Mission</h3>
+                <p>To empower businesses by delivering consistent, professional, and efficient customer support, enabling them to focus on their core growth strategies.</p>
+            </div>
+            <div class="mv-card">
+                <h3>Vision</h3>
+                <p>To become the most trusted outsourced customer service partner in Africa, known for reliability, innovation, and genuine care for our clients’ success.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <h2 class="section-title">About NexaServe</h2>
-            <p>
-                NexaServe is a trusted South African-based customer service and administrative support provider. We help businesses focus on growth while we manage their customer communication and admin tasks. Our unique model allows us to operate just 4 focused hours a day, 7 days a week — ensuring you get all the work done without paying for unnecessary idle time. With guaranteed 12–24h response times, we integrate seamlessly into your operations as a reliable, brand-aligned partner.
-            </p>
+<section id="values" class="section values-section">
+    <div class="container">
+        <h2 class="section-title">Our Values & Principles</h2>
+        <div class="values-grid">
+            <div class="value-card"><h3>Integrity</h3><p>We maintain honesty and transparency in all our communications and operations.</p></div>
+            <div class="value-card"><h3>Reliability</h3><p>Our clients trust us to deliver on time, every time, without compromising quality.</p></div>
+            <div class="value-card"><h3>Excellence</h3><p>We hold ourselves to the highest standards in service delivery and client satisfaction.</p></div>
+            <div class="value-card"><h3>Client Focus</h3><p>Every decision we make is guided by our commitment to our clients' goals and needs.</p></div>
+            <div class="value-card"><h3>Confidentiality</h3><p>We protect our clients’ data and respect their privacy at all times.</p></div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Mission & Vision -->
-    <section id="mission" class="section mission-section">
-        <div class="container">
-            <h2 class="section-title">Our Mission & Vision</h2>
-            <div class="mv-grid">
-                <div class="mv-card">
-                    <h3>Mission</h3>
-                    <p>To empower businesses by delivering consistent, professional, and efficient customer support, enabling them to focus on their core growth strategies.</p>
-                </div>
-                <div class="mv-card">
-                    <h3>Vision</h3>
-                    <p>To become the most trusted outsourced customer service partner in Africa, known for reliability, innovation, and genuine care for our clients’ success.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Values & Principles -->
-    <section id="values" class="section values-section">
-        <div class="container">
-            <h2 class="section-title">Our Values & Principles</h2>
-            <div class="values-grid">
-                <div class="value-card"><h3>Integrity</h3><p>We maintain honesty and transparency in all our communications and operations.</p></div>
-                <div class="value-card"><h3>Reliability</h3><p>Our clients trust us to deliver on time, every time, without compromising quality.</p></div>
-                <div class="value-card"><h3>Excellence</h3><p>We hold ourselves to the highest standards in service delivery and client satisfaction.</p></div>
-                <div class="value-card"><h3>Client Focus</h3><p>Every decision we make is guided by our commitment to our clients' goals and needs.</p></div>
-                <div class="value-card"><h3>Confidentiality</h3><p>We protect our clients’ data and respect their privacy at all times.</p></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Commitment -->
+    !-- Commitment -->
     <section id="commitment" class="section commitment-section">
         <div class="container">
             <h2 class="section-title">Our Commitment to Clients</h2>
@@ -214,18 +199,32 @@
         <a href="#contact" class="btn-primary">Contact Us Today</a>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p>Email: <a href="mailto:nexaserve.help@gmail.com">nexaserve.help@gmail.com</a></p>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 NexaServe. All Rights Reserved.</p>
-    </footer>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>Email: <a href="mailto:nexaserve.help@gmail.com">nexaserve.help@gmail.com</a></p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 NexaServe. All Rights Reserved.</p>
+</footer>
+
+<!-- HAMBURGER MENU JS -->
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+</script>
 
 </body>
+</html>
+
 </html>
